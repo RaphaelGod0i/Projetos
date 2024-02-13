@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'DS-DIGIB';
+    src: url(font/DS-DIGIB.TTF) format('Truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url("https://images.unsplash.com/photo-1627556592933-ffe99c1cd9eb?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(207, 174, 125);
+    text-shadow: 2px 2px 5px rgb(2, 2, 2);
+}
+
+.relogio {
+    display: flex;
+}
+
+.relogio div {
+    margin: 5px;
+    position: relative;
+}
+
+.relogio span {
+    width: 100px;
+    height: 80px;
+    background: rgb(175, 108, 8);
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.relogio .texto{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: rgb(189, 141, 69);
+    opacity: 0.8;
+}
+
+.relogio #hora, #minutos, #segundos {
+    font-family: 'DS-DIGIB';
+}
