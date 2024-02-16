@@ -4,18 +4,18 @@ const segundoEl = document.getElementById("segundos");
 const ampmEl = document.getElementById("ampm");
 
 function atualizarRelogio(){
-    let h = new Date().getHours();
-    let m = new Date().getMinutes();
-    let s = new Date().getSeconds();
+    let hora = new Date().getHours();
+    let min = new Date().getMinutes();
+    let seg = new Date().getSeconds();
     let ampm = "AM"
 
-    h = h < 10 ? "0" + h : h;
-    m = m < 10 ? "0" + m : m;
-    s = s < 10 ? "0" + s : s;
+    hora = hora < 10 ? "0" + hora : hora;
+    min = min < 10 ? "0" + min : min;
+    seg = seg < 10 ? "0" + seg : seg;
 
-    horaEl.innerText = h;
-    minutoEl.innerText = m;
-    segundoEl.innerHTML = s;
+    horaEl.innerText = hora;
+    minutoEl.innerText = min;
+    segundoEl.innerHTML = seg;
     ampmEl, (innerText = ampm);
     setTimeout(()=>{
         atualizarRelogio();
